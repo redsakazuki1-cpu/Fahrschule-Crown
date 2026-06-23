@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
+    padding: 28px 8%;
     background: white;
     border-bottom: 3px solid gold;
 }
@@ -36,15 +36,16 @@ body {
 .nav-links a:hover {
     color:gold;
     transform: translateY(-2px);
+    border-bottom: 2px solid #D4AF37;
 }
 
-
-.herobanner {
+.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 85vh;
     padding: 0 8%;
+    gap: 60px;
 }
 
 .hero-left {
@@ -56,16 +57,21 @@ body {
 }
 
 .hero-right img {
+    display: block;
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0,0,0,.2);
+    transition: transform .3s ease;
+}
+
+.hero-right img:hover {
+    transform: scale(1.02);
 }
 
 .hero-left h2 {
     font-size: 3.25rem;
     margin-bottom: 20px;
     color: #D4AF37;
-
 }
 
 .hero-left p {
@@ -73,7 +79,7 @@ body {
     margin-bottom: 30px;
 }
 
-.herobanner-btn {
+.btn {
     color: #ffffff;
     background-color: #D4AF37;
     border-radius: 20px;
@@ -81,7 +87,7 @@ body {
     padding: 20px;
 }
 
-.herobanner-btn:hover {
+.btn:hover {
     color: #c49a22;
     transform: translateY(-2px);
     transition: all 0.3s ease;
