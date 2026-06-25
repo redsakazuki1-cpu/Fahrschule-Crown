@@ -267,13 +267,6 @@ body {
     background-color: rgb(232, 232, 232);
 }
 
-.faq {
-    margin-bottom: 670px;
-}
-
-.faq-text {
-    margin-left: 205px;
-}
 
 footer {
     text-align: center;
@@ -341,3 +334,37 @@ body.dark .why1 {
 body.dark .kontakt {
     background-color: rgb(39, 39, 39);
 }
+
+.faq {
+    margin-bottom: 670px;
+    line-height: 100px;
+}
+
+.faq-text {
+    margin-left: 205px;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 15px;
+}
+
+.faq-text.active .faq-answer {
+    display: block;
+}
+
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+    line-height: 2px;
+}
+
+
+
