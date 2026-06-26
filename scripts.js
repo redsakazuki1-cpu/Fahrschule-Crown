@@ -23,10 +23,14 @@ faqQuestions.forEach(function (question) {
 });
 
 
-let hour = new Date().getHours();
-let greetingText = "";
+
 
 function showGreeting() {
+    const greeting = document.getElementById("greeting");
+
+    if (greeting) {
+        let hour = new Date().getHours();
+        let greetingText = "";
 
     if (hour < 12) {
         greetingText = "Guten Morgen";
@@ -37,7 +41,8 @@ function showGreeting() {
     else {
         greetingText = "Guten Abend";
     }
-    document.getElementById("greeting").innerText = greetingText; 
+    greeting.innerText = greetingText;
+}
 }
 
 showGreeting();
@@ -67,4 +72,23 @@ setTimeout(function () {
 }, 10000);
 
 
+const courseOptions = document.querySelectorAll(".courseoption");
+const result = document.getElementById("result");
 
+if (courseOptions.length > 0 && result) {
+    courseOptions.forEach(function (option) {
+        option.addEventListener("change", calculateTotal);
+    });
+}
+
+function calculateTotal() {
+    let total = 0;
+
+    courseOptions.forEach(function (option) {
+        if (option.checked) {
+            total = total + Number(option.value);
+        }
+    });
+
+    result.innerText = "Gesamptpreis: CHF" + total;
+}
