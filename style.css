@@ -345,8 +345,14 @@ body.dark .kontakt {
 }
 
 .faq-answer {
+    color:#f1c535;
     display: none;
     margin-top: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    position: relative;
+    top: -6px;
+    font-size: 20px;
 }
 
 .faq-text.active .faq-answer {
