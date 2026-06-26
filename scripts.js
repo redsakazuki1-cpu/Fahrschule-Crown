@@ -42,3 +42,29 @@ function showGreeting() {
 
 showGreeting();
 
+
+const heroImage = document.getElementById("heroImage");
+
+let images = [
+    "learner.jpg",
+    "learner2.jpg",
+    "learner3.png"
+];
+
+let currentImage = 0;
+
+setInterval(function () {
+    currentImage++; 
+if (currentImage >= images.length) {
+    currentImage = 0;
+}
+heroImage.style.opacity = "0.0001";
+setTimeout(function () {
+    heroImage.src = images[currentImage];
+    heroImage.style.opacity = "1";
+
+}, 800);
+}, 10000);
+
+
+

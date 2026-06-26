@@ -389,3 +389,9 @@ body.dark .kontakt {
   50% { color: rgb(251, 255, 0); }
   100% { color: #f1c535}
 }
+
+
+#heroImage {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
