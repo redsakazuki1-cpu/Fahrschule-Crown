@@ -93,14 +93,14 @@ body {
 
 .btn {
     color: #ffffff;
-    background-color: #D4AF37;
+    background-color: #deb327;
     border-radius: 20px;
     text-decoration: none;
     padding: 20px;
 }
 
 .btn:hover {
-    color: #c49a22;
+    color: #fffb00;
     transform: translateY(-2px);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -367,4 +367,19 @@ body.dark .kontakt {
 }
 
 
+#greeting {
+    color: #f1c535;
+    margin-left: 195px;
+    font-size: 50px;
+    position: relative;
+    top: 240px;
+    animation: animated2 2s infinite;
+   
+}
 
+
+@keyframes animated2 {
+  0% { color: #f1c535 }
+  50% { color: rgb(251, 255, 0); }
+  100% { color: #f1c535}
+}

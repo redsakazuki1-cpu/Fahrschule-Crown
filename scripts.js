@@ -23,4 +23,22 @@ faqQuestions.forEach(function (question) {
 });
 
 
+let hour = new Date().getHours();
+let greetingText = "";
+
+function showGreeting() {
+
+    if (hour < 12) {
+        greetingText = "Guten Morgen";
+    }
+    else if (hour < 17) {
+        greetingText = "Guten Nachmittag";
+    }
+    else {
+        greetingText = "Guten Abend";
+    }
+    document.getElementById("greeting").innerText = greetingText; 
+}
+
+showGreeting();
 
